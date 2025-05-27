@@ -110,7 +110,7 @@ impl Evaluaton {
         self.items
             .iter()
             .enumerate()
-            .filter(|(_, &item)| item == Some(true))
+            .filter(|(_, item)| matches!(item, Some(true)))
             .map(|(index, _)| index)
             .collect()
     }
@@ -119,7 +119,7 @@ impl Evaluaton {
         self.items
             .iter()
             .enumerate()
-            .filter(|(_, &item)| item != Some(false))
+            .filter(|(_, item)| !matches!(item, Some(false)))
             .map(|(index, _)| index)
             .collect()
     }
