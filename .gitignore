@@ -11,8 +11,8 @@
 *.sw?
 
 # Rust
-rust/target
-rust/pkg
+target
+pkg
 
 # Logs
 logs
