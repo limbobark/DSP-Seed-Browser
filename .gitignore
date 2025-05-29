@@ -23,3 +23,8 @@ pnpm-debug.log*
 # Frontend
 node_modules
 dist
+auto-imports.d.ts
+components.d.ts
+
+# Nx
+.nx

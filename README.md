@@ -5,3 +5,8 @@
 cd rust
 cargo install wasm-pack
 ```
+
+
+```shell
+
+```

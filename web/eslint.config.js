@@ -1,9 +1,7 @@
-import antfu from '@antfu/eslint-config'
+import pluginVue from "eslint-plugin-vue";
+import standard from "@vue/eslint-config-standard";
 
-export default antfu(
-  {
-    unocss: true,
-    formatters: true,
-    pnpm: true,
-  },
-)
+export default [
+  ...pluginVue.configs["flat/essential"],
+  ...standard,
+]

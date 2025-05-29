@@ -1,0 +1,12 @@
+{
+    "name": "dsp-seed-browser",
+    "private": true,
+    "scripts": {
+        "dev": "nx serve web"
+    },
+    "devDependencies": {
+        "@nx/workspace": "latest",
+        "nx": "latest",
+        "typescript": "^5.8.3"
+    }
+}

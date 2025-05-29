@@ -1,0 +1,29 @@
+{
+    "name": "rust",
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "sourceRoot": "rust",
+    "projectType": "application",
+    "targets": {
+        "build": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "cargo build --release",
+                "cwd": "rust"
+            }
+        },
+        "test": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "cargo test",
+                "cwd": "rust"
+            }
+        },
+        "lint": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "cargo clippy",
+                "cwd": "rust"
+            }
+        }
+    }
+}
