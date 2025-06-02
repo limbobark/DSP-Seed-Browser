@@ -5,6 +5,8 @@ import {
   presetWebFonts,
   presetWind4,
 } from 'unocss'
+// import presetWebFonts from '@unocss/preset-web-fonts'
+import { createLocalFontProcessor } from '@unocss/preset-web-fonts/local'
 
 export default defineConfig({
   shortcuts: [
@@ -24,6 +26,9 @@ export default defineConfig({
         serif: 'DM Serif Display',
         mono: 'DM Mono',
       },
+      processors: createLocalFontProcessor({
+        fontAssetsDir: 'public/assets/fonts',
+      })
     }),
   ],
 })
